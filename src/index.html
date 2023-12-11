@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../Assets/logo mobile.svg" type="image/x-icon">
+        <link href="../dist/output.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
+        <link rel="stylesheet" href="./index.css">
+        <title>Airdrophunter</title>
+    </head>
+
+    <body class="bg-[#EAEBF6]">
+        <div class="w-full h-full">
+            <div class="bg-[#23ACDE]">
+                <h2 class="text-white text-center py-[6px] text-[14px] font-normal leading-[21px]">This project is beta.
+                    DYOR</h2>
+            </div>
+            <div class="mx-[12px] mt-[25px] flex justify-between">
+                <img src="../Assets/logo mobile.svg" alt="logo">
+                <div class="flex">
+                    <button type="button"
+                        class="mr-[5px] py-[10px] px-[15px] bg-[#54AAD9] text-white text-[15px] font-medium leading-[17px] rounded-[10px]">Deposit</button>
+                    <div class="hidden md:flex md:mr-[10px] lg:flex lg::mr-[10px] xl:hidden">
+                        <img src="../Assets/Frame.svg" alt="" class="px-[10px] py-[10px] bg-white rounded-[10px]">
+                        <div class="w-[410px] h-[40px] bg-white rounded-[10px] ml-[5px] flex">
+                            <p class="ml-[10px] pt-[11px] text-black text-[15px] font-medium leading-[17px]">850$</p>
+                            <input type="text" placeholder="0xf7n...78ba" class="ml-[10px] my-[3px] w-[250px] text-center rounded-[8px] bg-[#F4F4F4] border-none outline-none">
+                            <i class="fa-solid fa-gas-pump ml-[10px] pt-[12px]"></i>
+                            <p class="ml-[6px] pt-[11px] text-black text-[15px] font-medium leading-[17px]">0$</p>
+                            <img src="../Assets/fox.svg" alt="fox"
+                                class="ml-[15px] p-[4px] my-[3px] rounded-[8px] bg-[#FFE0B9]">
+                        </div>
+                    </div>
+                    <a href="./Wallet.html">
+                        <button type="button"
+                            class="hidden md:block border-2 border-solid border-[#23ACDE] rounded-[10px] text-[#23ACDE] px-[15px] py-[10px] mx-[10px]">Connect
+                            Wallet</button>
+                    </a>
+                    <button type="button" class="px-[12px] py-[7px] bg-white rounded-[10px]"><i
+                            class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mx-[12px] mt-[16px] flex md:hidden">
+                <img src="../Assets/Frame.svg" alt="" class="px-[10px] py-[10px] bg-white rounded-[10px]">
+                <div class="w-[410px] h-[40px] bg-white rounded-[10px] ml-[5px] flex">
+                    <p class="ml-[10px] pt-[11px] text-black text-[15px] font-medium leading-[17px]">850$</p>
+                    <div class="w-[250px] h-[35px] bg-[#F4F4F4] mt-[3px] ml-[10px] rounded-[8px] text-center">
+                        <p class="pt-[8px] text-[15px] text-[#646774] font-medium leading-[17px]">0xf7n...78ba</p>
+                    </div>
+                    <i class="fa-solid fa-gas-pump ml-[10px] pt-[12px]"></i>
+                    <p class="ml-[6px] pt-[11px] text-black text-[15px] font-medium leading-[17px]">0$</p>
+                    <img src="../Assets/fox.svg" alt="fox"
+                        class="ml-[15px] p-[4px] my-[3px] rounded-[8px] bg-[#FFE0B9]">
+                </div>
+            </div>
+            <div class="mt-[15px] md:mt-[50px] mx-[12px] md:mx-[90px] lg:mx-[132px] xl:mx-[500px]">
+                <div class="w-full h-[41px] rounded-[10px] bg-white">
+                    <div class="flex justify-between mx-[3px]">
+                        <button type="button"
+                            class="px-[10px] py-[5px] mt-[3px] bg-[#F4F4F4] rounded-[8px] md:hidden"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <button type="button"
+                            class="py-[8px] pl-[8px] pr-[23px] rounded-[8px] hover:bg-[#F4F4F4] text-black text-[15px] font-medium leading-[17px] mt-[3px] relative">
+                            AirDrops
+                            <span
+                                class="p-[3px] bg-[#F4F4F4] hover:bg-[#23ACDE] rounded-[50%] text-black hover:text-white text-[8px] font-normal absolute top-0 right-[5px]">11</span>
+                        </button>
+                        <button type="button"
+                            class="py-[8px] pl-[8px] pr-[23px] rounded-[8px] hover:bg-[#F4F4F4] text-black text-[15px] font-medium leading-[17px] mt-[3px] relative">
+                            Stats
+                            <span
+                                class="p-[3px] bg-[#F4F4F4] hover:bg-[#23ACDE] rounded-[50%] text-black hover:text-white text-[8px] font-normal absolute top-0 right-[5px]">7</span>
+                        </button>
+                        <button type="button"
+                            class="py-[8px] pl-[8px] pr-[23px] rounded-[8px] hover:bg-[#F4F4F4] text-black text-[15px] font-medium leading-[17px] mt-[3px] relative">
+                            News
+                            <span
+                                class="p-[3px] bg-[#F4F4F4] hover:bg-[#23ACDE] rounded-[50%] text-black hover:text-white text-[8px] font-normal absolute top-0 right-[5px]">3</span>
+                        </button>
+                        <button type="button"
+                            class="py-[8px] pl-[8px] pr-[23px] rounded-[8px] hover:bg-[#F4F4F4] text-black text-[15px] font-medium leading-[17px] mt-[3px] relative">
+                            Referrals
+                            <span
+                                class="p-[3px] bg-[#F4F4F4] hover:bg-[#23ACDE] rounded-[50%] text-black hover:text-white text-[8px] font-normal absolute top-0 right-[5px]">99+</span>
+                        </button>
+                        <button type="button"
+                            class="py-[8px] px-[12px] rounded-[8px] hover:bg-[#F4F4F4] text-black text-[15px] font-medium leading-[17px] mt-[3px] hidden md:block">
+                            Nodes
+                        </button>
+                        <button type="button"
+                            class="py-[8px] px-[12px] rounded-[8px] hover:bg-[#F4F4F4] text-black text-[15px] font-medium leading-[17px] mt-[3px] hidden md:block">
+                            Text
+                        </button>
+                        <button type="button"
+                            class="px-[10px] py-[5px] mt-[3px] bg-[#F4F4F4] rounded-[8px] md:hidden"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[10px] mx-[12px] md:mx-[90px] lg:mx-[132px] xl:mx-[100px] xl:mt-[50px]">
+                <div class="w-full h-[70px] bg-white rounded-[10px]">
+                    <div class="py-[5px] px-[3px] flex justify-between">
+                        <button type="button"
+                            class="w-[40px] h-[40px] rounded-[50%] bg-[#F3F3F3] ml-[15px] mt-[10px] hidden md:block"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <img src="../Assets/image-1.svg" alt="image-1" class="ml-[10px]">
+                        <img src="../Assets/image-2.svg" alt="image-2" class="ml-[10px]">
+                        <img src="../Assets/image-3.svg" alt="image-3" class="ml-[10px]">
+                        <img src="../Assets/image-4.svg" alt="image-4" class="ml-[10px]">
+                        <img src="../Assets/image-8.svg" alt="image-8" class="ml-[10px]">
+                        <img src="../Assets/StarkNet.svg" alt="StarkNet" class="ml-[10px]">
+                        <img src="../Assets/image-9.svg" alt="image-9" class="ml-[10px]">
+                        <img src="../Assets/image-7.svg" alt="image-7" class="ml-[10px]">
+                        <img src="../Assets/image-5.svg" alt="image-5" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-10.svg" alt="image-10" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-12.svg" alt="image-12" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-1.svg" alt="image-1" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-2.svg" alt="image-2" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-3.svg" alt="image-3" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-4.svg" alt="image-4" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-8.svg" alt="image-8" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/StarkNet.svg" alt="StarkNet" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-9.svg" alt="image-9" class="ml-[10px] hidden md:block">
+                        <img src="../Assets/image-7.svg" alt="image-7" class="ml-[10px] hidden md:block">
+                        <button type="button"
+                            class="w-[40px] h-[40px] rounded-[50%] bg-[#F3F3F3] mr-[5px] mt-[10px] hidden md:block"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[25px] mx-[12px] md:mx-[90px] lg:mx-[132px] xl:mt-[50px] xl:mx-[100px] ">
+                <div class="w-[450px] md:w-auto bg-white rounded-[10px]">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-button flex" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="w-[40] h-[40px] rounded-[50%] bg-[#F4F4F4] items-center relative"
+                                    type="button" data-bs-toggle="collapse">
+                                    <i class="fa-solid fa-arrow-down absolute left-[5px] text-black top-[12px]"></i>
+                                </div>
+                                <h5
+                                    class="ml-[30px] items-center font-normal text-[14px] leading-[20px] mt-[5px] text-CdarkBlue">
+                                    Show</h5>
+                                <button class="font-medium text-[18px] text-black leading-[24px] ml-[40px]">
+                                    AirdropHunter’s NEWS
+                                </button>
+                                <!-- <p
+                                class="text-[14px] font-normal leading-[23px] text-[#999] hidden md:block md:truncate ml-[10px] lg:ml-[50px] xl:ml-[100px] mt-[15px]">
+                                Starknet is a decentralized Validity-Rollup Rо...
+                            </p> -->
+                            </div>
+                            <div id="collapseOne"
+                                class="accordion-collapse block flex-row-reverse divide-y-reverse lg:flex"
+                                data-bs-parent="#accordionExample">
+                                <img src="../Assets/image 76.svg" alt="image" class="w-full rounded-t-[10px]">
+                                <div class="accordion-body">
+                                    <p class="font-light text-[14px] leading-[20px] text-[#999999] mt-[25px]">Today ·
+                                        15:24
+                                    </p>
+                                    <h2 class="font-medium text-[25px] leading-[34px] text-black mt-[10px]">
+                                        Starknet is a decentralized
+                                        Validity-Rollup often referred
+                                    </h2>
+                                    <p class="mt-[20px] font-normal text-[16px] leading-[23px] text-[#999]">
+                                        Starknet is a decentralized Validity-Rollup (often referred
+                                        to as ZK-Rollup). It operates as a Layer 2
+                                        network over Ethereum. Starknet is a decentralized Validity-Rollup Starknet is a
+                                        decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates
+                                    </p>
+                                    <div class="mt-[50px] flex justify-between">
+                                        <div class="flex items-center cursor-pointer">
+                                            <div
+                                                class="w-[40px] h-[40px] rounded-[50%] bg-[#F3F3F3] items-center relative">
+                                                <i class="fa-solid fa-arrow-up absolute left-[14px] top-[12px]"></i>
+                                            </div>
+                                            <h5 class="text-[#3D8AFF] ml-[10px]">Hide</h5>
+                                        </div>
+                                        <div class="flex items-center cursor-pointer">
+                                            <div class="w-[40px] h-[40px] rounded-[50%] bg-[#F3F3F3] relative">
+                                                <i class="fa-solid fa-arrow-left absolute left-[14px] top-[12px]"></i>
+                                            </div>
+                                            <p
+                                                class="mx-[10px] font-normal text-[14px] leading-[17px] mt-[10px] text-[#999999]">
+                                                <span class="text-black">1</span>/3
+                                            </p>
+                                            <div class="w-[40px] h-[40px] rounded-[50%] bg-[#F3F3F3] relative">
+                                                <i class="fa-solid fa-arrow-right absolute left-[13px] top-[12px]"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[25px] mx-[30px] md:mx-[90px] lg:mx-[132px] xl:mx-[100px]">
+                <div class="block md:flex md:justify-between">
+                    <div class="w-[410px] bg-white rounded-[10px] mb-[30px]">
+                        <div class="px-6 pt-4 flex">
+                            <img src="../Assets/StarkNet.svg" alt="LayerZero">
+                            <p class="ml-[5px] mt-[5px]">StarkNet</p>
+                        </div>
+                        <p class="px-4 pt-[10px] text-[18px] text-[#999999] font-normal leading-[23px]">
+                            LayerZero is an Omnichain <br> communication protocol designed to <br> simplify
+                            message
+                            passing across chains.
+                        </p>
+                        <button type="button" class="text-[#3D8AFF] texte-[14px] font-normal leading-[17px] mt-[53px] px-4">Read
+                            more
+                        </button>
+                        <div class="px-4 pt-[10px]">
+                            <div class="border border-solid border-[#999999] w-[400px] h-[100px] rounded-[10px]">
+                                <h5 class="font-normal text-[15px] text-black leading-[24px] ml-[10px] mt-[10px]">
+                                    On
+                                    artificial AI:</h5>
+                                <div class="ml-[10px] mt-[10px] flex">
+                                    <div class="items-center">
+                                        <p class="font-normal text-[15px] text-[#444444] leading-[24px]">
+                                            expected
+                                            airdrop</p>
+                                        <h6 class="font-normal text-[16px] text-black leading-[24px]">$500 -
+                                            $5000</h6>
+                                    </div>
+                                    <div class="ml-[55px]">
+                                        <p class="font-normal text-[15px] text-[#444444] leading-[24px]">
+                                            probability</p>
+                                        <h6 class="font-normal text-[16px] text-black leading-[24px]">78 %</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 pt-[10px]">
+                            <div class="flex">
+                                <p class="font-normal text-[11px] text-[#636775] leading-[15px]">Tariff</p>
+                                <p class="font-normal text-[11px] text-[#636775] leading-[15px] ml-[140px]">Cost,
+                                    $</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">5
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] pl-[70px] pr-[66px]">150</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">10
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">300</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">15
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">450</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">20
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">600</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">25
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">750</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">30
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">900</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-[10px]">
+                            <button type="button"
+                                class="w-full py-[10px] bg-[#E0E3F5] border border-solid border-[#23ACDE] rounded-[10px] font-normal text-[17px] text-[#23ACDE] leading-[22px]">Buy</button>
+                        </div>
+                        <p class="text-center font-normal text-[12px] text-[#444] leading-[18px] pt-[10px] pb-[27px]">Choose a suitable tarif and click the
+                            button
+                        </p>
+                    </div>
+                    <div class="w-[410px] bg-white rounded-[10px] mb-[30px]">
+                        <div class="px-6 pt-4 flex">
+                            <img src="../Assets/StarkNet.svg" alt="LayerZero">
+                            <p class="ml-[5px] mt-[5px]">StarkNet</p>
+                        </div>
+                        <p class="px-4 pt-[10px] text-[18px] text-[#999999] font-normal leading-[23px]">
+                            LayerZero is an Omnichain <br> communication protocol designed to <br> simplify
+                            message
+                            passing across chains.
+                        </p>
+                        <button type="button" class="text-[#3D8AFF] texte-[14px] font-normal leading-[17px] mt-[53px] px-4">Read
+                            more
+                        </button>
+                        <div class="px-4 pt-[10px]">
+                            <div class="border border-solid border-[#999999] w-[400px] h-[100px] rounded-[10px]">
+                                <h5 class="font-normal text-[15px] text-black leading-[24px] ml-[10px] mt-[10px]">
+                                    On
+                                    artificial AI:</h5>
+                                <div class="ml-[10px] mt-[10px] flex">
+                                    <div class="items-center">
+                                        <p class="font-normal text-[15px] text-[#444444] leading-[24px]">
+                                            expected
+                                            airdrop</p>
+                                        <h6 class="font-normal text-[16px] text-black leading-[24px]">$500 -
+                                            $5000</h6>
+                                    </div>
+                                    <div class="ml-[55px]">
+                                        <p class="font-normal text-[15px] text-[#444444] leading-[24px]">
+                                            probability</p>
+                                        <h6 class="font-normal text-[16px] text-black leading-[24px]">78 %</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 pt-[10px]">
+                            <div class="flex">
+                                <p class="font-normal text-[11px] text-[#636775] leading-[15px]">Tariff</p>
+                                <p class="font-normal text-[11px] text-[#636775] leading-[15px] ml-[140px]">Cost,
+                                    $</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">5
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] pl-[70px] pr-[66px]">150</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">10
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">300</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">15
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">450</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">20
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">600</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">25
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">750</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                            <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">30
+                                    accounts</h5>
+                                <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">900</h5>
+                                <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                    Detail</p>
+                            </div>
+                        </div>
+                        <div class="px-4 py-[10px]">
+                            <button type="button"
+                                class="w-full py-[10px] bg-[#E0E3F5] border border-solid border-[#23ACDE] rounded-[10px] font-normal text-[17px] text-[#23ACDE] leading-[22px]">Buy</button>
+                        </div>
+                        <p class="text-center font-normal text-[12px] text-[#444] leading-[18px] pt-[10px] pb-[27px]">Choose a suitable
+                            tarif and click the
+                            button
+                        </p>
+                    </div>
+                    <div class="w-[410px] bg-white rounded-[10px] mb-[30px] md:hidden lg:block">
+                    <div class="px-6 pt-4 flex">
+                        <img src="../Assets/StarkNet.svg" alt="LayerZero">
+                        <p class="ml-[5px] mt-[5px]">StarkNet</p>
+                    </div>
+                    <p class="px-4 pt-[10px] text-[18px] text-[#999999] font-normal leading-[23px]">
+                        LayerZero is an Omnichain <br> communication protocol designed to <br> simplify
+                        message
+                        passing across chains.
+                    </p>
+                    <button type="button" class="text-[#3D8AFF] texte-[14px] font-normal leading-[17px] mt-[53px] px-4">Read
+                        more
+                    </button>
+                    <div class="px-4 pt-[10px]">
+                        <div class="border border-solid border-[#999999] w-[400px] h-[100px] rounded-[10px]">
+                            <h5 class="font-normal text-[15px] text-black leading-[24px] ml-[10px] mt-[10px]">
+                                On
+                                artificial AI:</h5>
+                            <div class="ml-[10px] mt-[10px] flex">
+                                <div class="items-center">
+                                    <p class="font-normal text-[15px] text-[#444444] leading-[24px]">
+                                        expected
+                                        airdrop</p>
+                                    <h6 class="font-normal text-[16px] text-black leading-[24px]">$500 -
+                                        $5000</h6>
+                                </div>
+                                <div class="ml-[55px]">
+                                    <p class="font-normal text-[15px] text-[#444444] leading-[24px]">
+                                        probability</p>
+                                    <h6 class="font-normal text-[16px] text-black leading-[24px]">78 %</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pt-[10px]">
+                        <div class="flex">
+                            <p class="font-normal text-[11px] text-[#636775] leading-[15px]">Tariff</p>
+                            <p class="font-normal text-[11px] text-[#636775] leading-[15px] ml-[140px]">Cost,
+                                $</p>
+                        </div>
+                        <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] flex">
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">5
+                                accounts</h5>
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] pl-[70px] pr-[66px]">150</h5>
+                            <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                Detail</p>
+                        </div>
+                        <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">10
+                                accounts</h5>
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">300</h5>
+                            <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                Detail</p>
+                        </div>
+                        <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">15
+                                accounts</h5>
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">450</h5>
+                            <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                Detail</p>
+                        </div>
+                        <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">20
+                                accounts</h5>
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">600</h5>
+                            <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                Detail</p>
+                        </div>
+                        <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">25
+                                accounts</h5>
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">750</h5>
+                            <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                Detail</p>
+                        </div>
+                        <div class="w-full bg-[#F8F9FC] rounded-[5px] items-center py-[7px] mt-[10px] flex">
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] ml-[30px]">30
+                                accounts</h5>
+                            <h5 class="font-normal text-[14px] text-black leading-[17px] px-[65px]">900</h5>
+                            <p class="font-normal text-[12px] text-[#3D8AFF] leading-[15px]">
+                                Detail</p>
+                        </div>
+                    </div>
+                    <div class="px-4 py-[10px]">
+                        <button type="button"
+                            class="w-full py-[10px] bg-[#E0E3F5] border border-solid border-[#23ACDE] rounded-[10px] font-normal text-[17px] text-[#23ACDE] leading-[22px]">Buy</button>
+                    </div>
+                    <p class="text-center font-normal text-[12px] text-[#444] leading-[18px] pt-[10px] pb-[27px]">Choose a suitable
+                        tarif and click the
+                        button
+                    </p>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+            </script>
+    </body>
+
+</html>
