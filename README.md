@@ -1,1 +1,1 @@
-Just landing page with html/css
+Just landing page site with html/css
